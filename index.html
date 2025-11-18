@@ -23,8 +23,8 @@
         <a href="https://ca-en.clonline.org/" target="_blank">
         <img width="100" src="https://d3i6fh83elv35t.cloudfront.net/static/2025/05/2025-05-18T112633Z_614222846_RC2AKEAXM4TW_RTRMADP_3_POPE-LEO-1024x717.jpg" alt="Pope Leo XIV" /> <!-- this image, and if you can't find it, this other imge, size in pixels -->
         </a> <!-- for image, if I only set width, or only height, the other gets automatically set to it's correspondant, alt is really important -->
-        <video src="video.smthing" poster="public/thumb.jpg" controls height="400"></video> <!-- for video, it works the ssame as pdf or files if we tant it from our source, just as it does with inmages, controls makes it actually have vieo controls like playing poster is the thumbnail-->
-        <video src="https://www.youtube.com/watch?v=pQN-pnXPaVg" alt="HTML tutorial"></video> <!-- for videos like this, it works same as images, insert link. -->
+        <video src="video.smthing" poster="public/thumb.jpg" autoplay controls height="400"></video> <!-- for video, it works the ssame as pdf or files if we tant it from our source, just as it does with inmages, controls makes it actually have vieo controls like playing poster is the thumbnail can autoplay or loop. Can do it by writing either -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg?si=1CDlp4N0-Scld3W_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- for youtube videos, just share embed, and copy-paste code. -->
       </aside>
     <h1>GS Toronto</h1>
     <br/>  <!-- break (space between paragraphs) -->
@@ -35,6 +35,47 @@
     <p>H<sub>2</sub>O</p> <!-- sub = subscript -->
     <p>10<sup>2</sup></p> <!-- sup = superscript -->
     <p style="color: blue; background-color: #DC143C;">GS is like a big family</p> <!-- how to use styles with attributes (will learn CSS later) -->
+      <ul> <!-- container for list (unordered) has bullet points -->
+        <li><a href="#">Apples</a></li> <!-- you can put just about anything in these list items, even a link -->
+        <li>Oranges</li>
+        <li>Bananas</li>
+      </ul>
+      <ol type="I"> <!-- ordered list, same thing as unordered but with numbers instead of bullet points (can use for recepies) for types: 1 is standeard, A is alfabetical with capitals, a non capitals, I is roman numerals, i is roman lower case -->
+        <li><a href="#">Apples</a></li>
+        <li>Oranges
+          <ol type="i"> <!-- a list inside a list -->
+            <li>Item one</li>
+          </ol>
+        </li>
+        <li>Bananas</li>
+      </ol>
+      <dl> <!-- description list (not used as much) -->
+        <dt>Apples</dt> <!-- description term, works similar to a list -->
+        <dd>- they are red</dd> <!-- describes the last term -->
+      </dl>
+      <table>
+        <tr> <!-- table row -->
+          <td></td>
+          <td>1</td> <!-- each of these table data is a column in the table -->
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr> 
+          <td>1</td>
+          <td>2</td> 
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr> 
+          <td>2</td>
+          <td>3</td> 
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+      </table>
     </main>
     <footer> <!-- Footer (at bottom links to social media, addresses . . .) -->
       
