@@ -1,8 +1,11 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8"> <!-- these are the characters we are using -->
-    <meta name="description" content="This is the official site for GS Toronto"> <!-- says that the content of description of website is this (I think it's what's below link on google -->
+    <meta charset="UTF-8"> <!-- these are the characters we are using, meta defines the information of this particular website -->
+    <meta name="description" content="This is the official site for GS Toronto"> <!-- says that the content of description of website is this (I think it's what's below link on google) should be under 160 characters -->
+    <meta name="author" content="Matteo Scolaro"> <!-- defines author -->
+    <meta name="keywords" content="HTML, GS"> <!-- used for SEO, maybe -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- controls how website is seen on different devices, needed to look good on phone -->
     <title>GS Toronto</title>
   </head>
   <body style="background-color: green"> <!-- this style gets overridden by the next one in its section. All will be green, but that paragraph will be red -->
@@ -54,28 +57,50 @@
         <dd>- they are red</dd> <!-- describes the last term -->
       </dl>
       <table>
-        <tr> <!-- table row -->
-          <td></td>
-          <td>1</td> <!-- each of these table data is a column in the table -->
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-        </tr>
-        <tr> 
-          <td>1</td>
-          <td>2</td> 
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-        </tr>
-        <tr> 
-          <td>2</td>
-          <td>3</td> 
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-        </tr>
+        <thead> <!-- defines this as the head of the table -->
+          <caption><h3>Addition of numbers</h3></caption> <!-- title of table -->
+          <tr> 
+            <th>added</th> <!-- each one is a table header -->
+            <th>addition with 1</th> 
+            <th>addition with 2</th>
+            <th>addition with 3</th>
+            <th>addition with 4</th>
+          </tr>
+        </thead>
+        <tbody> <!-- defines this as the body of the table -->
+          <tr> <!-- table row -->
+            <td>1</td> <!-- each of these table data is a column in the table -->
+            <td>2</td> 
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+          <tr> 
+            <td colspan="2">2</td> <!-- this now takes up 2 columns because of colspan -->
+            <td>3</td> 
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+        </tbody>
       </table>
+      <!-- inline vs block. inline=multiple go on one line ex.links. block=they need the whole line, even if they don't really use all of it, ex.paragraphs -->
+      <span>span1</span> <!-- spans used for inline elements, get displayed as inline, an inline containder -->
+      <span>span2</span>
+      <div>div1</div> <!-- divs used for block elements, get displayed as blocks, a block container -->
+      <div>div1</div>
+      <form> <!-- used to wrap input -->
+      <input type="text" value="enter your username"/> <!-- it will be a text box, it's simply not able to take info value will be displayed inside the text box already -->
+      <input type="password"/>
+      <input type="date"/> <!-- will let enter date --> <!-- there are many types, such as email, range, file, which will let them do anything, such as opening a file, with JS will be able to actually have them work -->
+      <input type="checkbox"/> <!-- buttons, also radio are buttons, but check boxes, people will be able to select multiple at the same time, but radio buttons, only 1 at a time if they have the same name. -->
+      <input name="btn" type="radio"/> <!-- can name radio buttons -->
+      <input type="submit"/> <!-- submit button -->
+      </form>
+      <textarea rows="10" cols="30">
+        Enter a paragraph
+      </textarea> <!-- will be a much bigger text box -->
+      <iframe src="https://ca-en.clonline.org/" frameborder="0" width="500" height="400">Sorry</iframe> <!-- shows website on my website, same as youtube videos, if it can't be viewed, the text in between frames will be displayed -->
     </main>
     <footer> <!-- Footer (at bottom links to social media, addresses . . .) -->
       
